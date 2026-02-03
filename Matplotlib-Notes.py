@@ -68,3 +68,22 @@ import matplotlib.pyplot as plt
 
 
 # 4-> PIE CHART :-
+# brand=["MARUTI","TOYOTA","AUDI","MERCEDES","LANDROVER"]
+# X=[456,233,56,76,189]
+# ex=[0,0,0,.1,0]
+# #explode :- keep out slice of that portion little outside .
+# #autopct :- give % on each slice of portion.
+# #startangle :- start with angle 90.
+# plt.pie(X,colors=["magenta","pink","red","orange","purple"],
+#         labels=brand,explode=ex,shadow=True,autopct="%.f",startangle=90)
+# plt.show()
+
+
+# da=pd.read_csv(r"C:\Users\cdeva\Downloads\sample_expenses.csv")
+# df=pd.DataFrame(da)
+# drp=df.groupby("Payment_Mode")["Amount"].sum()
+# ex=[0,.1,0]
+# plt.pie(drp.values,autopct="%.f",labels=drp.index,explode=ex,shadow=True)
+# plt.show()
+
+# 5-> BOX PLOT :-
