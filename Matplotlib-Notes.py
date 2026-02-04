@@ -119,7 +119,50 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 
-da=pd.read_csv(r"C:\Users\cdeva\Downloads\sample_expenses.csv")
-df=pd.DataFrame(da)
-plt.violinplot(df["Amount"],showmeans=True)
-plt.show()
+# da=pd.read_csv(r"C:\Users\cdeva\Downloads\sample_expenses.csv")
+# df=pd.DataFrame(da)
+# plt.violinplot(df["Amount"],showmeans=True)
+# plt.show()
+
+
+# 8 -> STEAM PLOT :-
+# X=[12,45,65,34,13,15,17,19,56,77]
+# plt.stem(X,linefmt="--",markerfmt="s",)
+# plt.plot(X,color="magenta")
+# plt.show()
+#Same For DataFrame :--
+
+
+# 9 -> STACK PLOT MATPLOTLIB :--
+
+# Days=[1,2,3,4,5,6,7]
+
+# NOP1=[56,95,44,49,38,34,55]
+# NOP2=[95,99,97,88,97,66,44]
+# #baseline-how it look/design.
+# NOP3=[34,54,64,90,88,94,88]
+# plt.stackplot(Days,NOP1,NOP2,NOP3,baseline="sym",labels=["WEEK 1","WEEK 2","WEEK 3","WEEK 4","WEEK 5","WEEK 6","WEEK 7"])
+# plt.legend()
+# plt.show()
+
+
+
+# da=pd.read_csv(r"C:\Users\cdeva\Downloads\food_nutrition.csv")
+# df=pd.DataFrame(da)
+# gp=df.groupby("Food").agg({"Calories":"mean","Protein_g":"mean","Fat_g":"mean"})
+# plt.stackplot(df["Food"],df["Calories"],df["Protein_g"],df["Fat_g"],labels=["CALORIES","PROTEIN","FAT"])
+# plt.legend()
+# plt.show()
+
+
+# 10 -> STEP PLOT :-
+# x=["DAY 1","DAT 2","DAY 3","DAY 4"]
+# y=[30,50,10,70]
+# plt.step(x,y,marker="s",where="mid")
+# plt.show()
+
+# da=pd.read_csv(r"C:\Users\cdeva\Downloads\sample_expenses.csv")
+# df=pd.DataFrame(da)
+# gp=df.groupby("Category").agg({"Amount":"sum"})
+# plt.step(df["Category"].unique(),gp["Amount"],marker="s",where="mid")
+# plt.show()
