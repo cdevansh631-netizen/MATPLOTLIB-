@@ -155,6 +155,8 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 
+
+
 # 10 -> STEP PLOT :-
 # x=["DAY 1","DAT 2","DAY 3","DAY 4"]
 # y=[30,50,10,70]
@@ -166,3 +168,23 @@ import matplotlib.pyplot as plt
 # gp=df.groupby("Category").agg({"Amount":"sum"})
 # plt.step(df["Category"].unique(),gp["Amount"],marker="s",where="mid")
 # plt.show()
+
+
+
+
+# 11 -> WORKING WITH LEGENDS :-
+
+# x=[1,2,3,4]
+# y=[34,65,54,67]
+# y1=[43,56,78,55]
+# y2=[37,25,59,34]
+# plt.plot(x,y,label="MALE")
+# plt.plot(x,y1,label="FEMALE")
+# plt.plot(x,y2,label="OTHERS")
+# plt.legend(ncol=2,loc="upper right")  #loc-for location of legend : ncol-divide legend into no of col.
+# plt.legend(bbox_to_anchor=(1,1.2))  #TOMOVE LEGEND COLUMN OUT OF GRAPH.
+# plt.show()
+
+# 12 -> SUBPLOT MATPLOT :-
+
+
