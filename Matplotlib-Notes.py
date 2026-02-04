@@ -86,4 +86,40 @@ import matplotlib.pyplot as plt
 # plt.pie(drp.values,autopct="%.f",labels=drp.index,explode=ex,shadow=True)
 # plt.show()
 
-# 5-> BOX PLOT :-
+# 5-> BOX PLOT :-[--THEORY IN NOTEBOOK--]
+
+# l=[1,3,4,7,12,2,8,9,24]
+# l1=[2,3,6,8,9,1,13,4,1]
+# plt.boxplot([l,l1])
+# plt.show()
+
+# da=pd.read_csv(r"C:\Users\cdeva\Downloads\sample_expenses.csv")
+# df=pd.DataFrame(da)
+# plt.boxplot(df["Amount"])
+# plt.show()
+
+
+#6-> HISTOGRAM :-
+# x=[12,14,17,56,34,67,89,98,94,91]
+# plt.hist(x,bins=20,edgecolor="black",color="pink")
+# plt.show()
+
+
+# da=pd.read_csv(r"C:\Users\cdeva\Downloads\sample_expenses.csv")
+# df=pd.DataFrame(da)
+# plt.hist(df["Amount"],color="orange",edgecolor="black")
+# plt.show()
+
+
+
+
+# 7 ->VIOLIN PLOT :-
+# X=[1,10,99,22,35,90,42,97,98,99,84,88,96,83]
+# plt.violinplot(X,widths=10,showmedians=False,showmeans=False,showextrema=True)
+# plt.show()
+
+
+da=pd.read_csv(r"C:\Users\cdeva\Downloads\sample_expenses.csv")
+df=pd.DataFrame(da)
+plt.violinplot(df["Amount"],showmeans=True)
+plt.show()
