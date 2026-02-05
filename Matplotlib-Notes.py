@@ -187,4 +187,21 @@ import matplotlib.pyplot as plt
 
 # 12 -> SUBPLOT MATPLOT :-
 
+x=[1,3,5,7,9]
+y=[25,28,29,32,43]
+plt.subplot(1,2,1)
+plt.bar(x,y)
+
+x1=[2,4,6,8,10]
+y1=[20,30,32,65,55]
+plt.subplot(1,2,2)
+plt.plot(x1,y1)
+plt.suptitle("EMPLOYEE") #(ROW,COLUMN,CHARTNO)
+plt.savefig("DATA.png",facecolor="green",) #TO SAVE A IMAGE :
+plt.show()
+
+
+
+
+# 13 SAVE CHART USING MATPLOTLIB :-
 
