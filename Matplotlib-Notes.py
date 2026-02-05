@@ -14,6 +14,10 @@ import matplotlib.pyplot as plt
 
 
 # 1-> BAR PLOT .
+# Total amount per category → Bar plot
+# Marks obtained in each subject → Bar plot
+# Sales per product → Bar plot
+# Payment mode wise total amount → Bar plot
 
 # X=[94,95,81,86,97]
 # Y=["MATH","CHEMISTRY","PHYSICS","ENGLISH","IP"]
@@ -32,6 +36,11 @@ import matplotlib.pyplot as plt
 
 
 # 2-> LINE PLOT :-
+# Monthly spending trend → Line plot
+# Daily temperature change → Line plot
+# Stock price over time → Line plot
+# Website traffic per day → Line plot
+
 # x=["Day 1","Day 2","Day 3","Day 4","Day 5"]
 # y=[200,456,345,222,300]
 # z=[178,346,389,300,478]
@@ -50,6 +59,11 @@ import matplotlib.pyplot as plt
 
 
 # 3-> SCATTER PLOT :-
+# Category vs amount → Scatter plot
+# Study hours vs marks → Scatter plot
+# Height vs weight → Scatter plot
+# Advertising cost vs sales → Scatter plot
+
 
 # X=np.random.randint(1,10,50)
 # Y=np.random.randint(10,100,50)
@@ -68,6 +82,11 @@ import matplotlib.pyplot as plt
 
 
 # 4-> PIE CHART :-
+# Payment mode share → Pie chart
+# Expense category percentage → Pie chart
+# Market share of companies → Pie chart
+# Budget allocation → Pie chart
+
 # brand=["MARUTI","TOYOTA","AUDI","MERCEDES","LANDROVER"]
 # X=[456,233,56,76,189]
 # ex=[0,0,0,.1,0]
@@ -86,11 +105,15 @@ import matplotlib.pyplot as plt
 # plt.pie(drp.values,autopct="%.f",labels=drp.index,explode=ex,shadow=True)
 # plt.show()
 
-# 5-> BOX PLOT :-[--THEORY IN NOTEBOOK--]
+# 5-> BOX PLOT :-[--THEORY IN NOTEBOOK--]--variation,max,min,mean,median,abnormal_value
+# Outliers in amount → Box plot
+# Salary spread of employees → Box plot
+# Comparison of exam scores → Box plot
+# Detect abnormal values → Box plot
 
 # l=[1,3,4,7,12,2,8,9,24]
 # l1=[2,3,6,8,9,1,13,4,1]
-# plt.boxplot([l,l1])
+# plt.boxplot([l,l1],showmeans=True,meanline=True)
 # plt.show()
 
 # da=pd.read_csv(r"C:\Users\cdeva\Downloads\sample_expenses.csv")
@@ -100,8 +123,13 @@ import matplotlib.pyplot as plt
 
 
 #6-> HISTOGRAM :-
+# Amount distribution → Histogram
+# Age distribution of people → Histogram
+# Salary frequency → Histogram
+# Marks frequency → Histogram
+
 # x=[12,14,17,56,34,67,89,98,94,91]
-# plt.hist(x,bins=20,edgecolor="black",color="pink")
+# plt.hist(x,bins=5,edgecolor="black",color="pink")
 # plt.show()
 
 
@@ -114,6 +142,11 @@ import matplotlib.pyplot as plt
 
 
 # 7 ->VIOLIN PLOT :-
+# Category comparison (distribution) → Violin plot
+# Income distribution shape → Violin plot
+# Spending pattern comparison → Violin plot
+# Density comparison of values → Violin plot
+
 # X=[1,10,99,22,35,90,42,97,98,99,84,88,96,83]
 # plt.violinplot(X,widths=10,showmedians=False,showmeans=False,showextrema=True)
 # plt.show()
@@ -126,6 +159,10 @@ import matplotlib.pyplot as plt
 
 
 # 8 -> STEAM PLOT :-
+# Small discrete dataset visualization → Stem plot
+# Signal amplitude values → Stem plot
+# Exam marks of few students → Stem plot
+
 # X=[12,45,65,34,13,15,17,19,56,77]
 # plt.stem(X,linefmt="--",markerfmt="s",)
 # plt.plot(X,color="magenta")
@@ -134,6 +171,9 @@ import matplotlib.pyplot as plt
 
 
 # 9 -> STACK PLOT MATPLOTLIB :--
+# Weekly sales by multiple products → Stack plot
+# Contribution of departments over time → Stack plot
+# Category-wise spending over days → Stack plot
 
 # Days=[1,2,3,4,5,6,7]
 
@@ -141,7 +181,7 @@ import matplotlib.pyplot as plt
 # NOP2=[95,99,97,88,97,66,44]
 # #baseline-how it look/design.
 # NOP3=[34,54,64,90,88,94,88]
-# plt.stackplot(Days,NOP1,NOP2,NOP3,baseline="sym",labels=["WEEK 1","WEEK 2","WEEK 3","WEEK 4","WEEK 5","WEEK 6","WEEK 7"])
+# plt.stackplot(Days,NOP1,NOP2,NOP3,baseline="sym",labels=["WEEK 1","WEEK 2","WEEK 3"])
 # plt.legend()
 # plt.show()
 
@@ -158,6 +198,15 @@ import matplotlib.pyplot as plt
 
 
 # 10 -> STEP PLOT :-
+
+
+
+
+# Electricity bill slab changes → Step plot
+# Inventory level changes → Step plot
+# Price change at fixed intervals → Step plot
+# Policy changes over time → Step plot
+
 # x=["DAY 1","DAT 2","DAY 3","DAY 4"]
 # y=[30,50,10,70]
 # plt.step(x,y,marker="s",where="mid")
@@ -182,26 +231,26 @@ import matplotlib.pyplot as plt
 # plt.plot(x,y1,label="FEMALE")
 # plt.plot(x,y2,label="OTHERS")
 # plt.legend(ncol=2,loc="upper right")  #loc-for location of legend : ncol-divide legend into no of col.
-# plt.legend(bbox_to_anchor=(1,1.2))  #TOMOVE LEGEND COLUMN OUT OF GRAPH.
+# plt.legend(bbox_to_anchor=(1,1.2))  #TO MOVE LEGEND COLUMN OUT OF GRAPH.
 # plt.show()
 
 # 12 -> SUBPLOT MATPLOT :-
 
-x=[1,3,5,7,9]
-y=[25,28,29,32,43]
-plt.subplot(1,2,1)
-plt.bar(x,y)
+# x=[1,3,5,7,9]
+# y=[25,28,29,32,43]
+# plt.subplot(1,2,1)
+# plt.plot(x,y)
 
-x1=[2,4,6,8,10]
-y1=[20,30,32,65,55]
-plt.subplot(1,2,2)
-plt.plot(x1,y1)
-plt.suptitle("EMPLOYEE") #(ROW,COLUMN,CHARTNO)
-plt.savefig("DATA.png",facecolor="green",) #TO SAVE A IMAGE :
-plt.show()
+# x1=[2,4,6,8,10]
+# y1=[20,30,32,65,55]
+# plt.subplot(1,2,2)
+# plt.plot(x1,y1)
+# plt.suptitle("EMPLOYEE") #(ROW,COLUMN,CHARTNO)
+# # pad_inches :-Padding is the extra space added between the plot and titles/labels, measured in inches.
+# plt.savefig("DATA.png",facecolor="white",pad_inches=0.5,bbox_inches="tight") #TO SAVE A IMAGE :
+# plt.show()
 
 
 
 
-# 13 SAVE CHART USING MATPLOTLIB :-
 
