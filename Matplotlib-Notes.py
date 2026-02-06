@@ -128,9 +128,9 @@ import matplotlib.pyplot as plt
 # Salary frequency → Histogram
 # Marks frequency → Histogram
 
-# x=[12,14,17,56,34,67,89,98,94,91]
-# plt.hist(x,bins=5,edgecolor="black",color="pink")
-# plt.show()
+x=[12,14,17,56,34,67,89,98,94,91]
+plt.hist(x,bins=5,edgecolor="black",color="pink")
+plt.show()
 
 
 # da=pd.read_csv(r"C:\Users\cdeva\Downloads\sample_expenses.csv")
@@ -175,15 +175,15 @@ import matplotlib.pyplot as plt
 # Contribution of departments over time → Stack plot
 # Category-wise spending over days → Stack plot
 
-Days=[1,2,3,4,5,6,7]
+# Days=[1,2,3,4,5,6,7]
 
-NOP1=[56,95,44,49,38,34,55]
-NOP2=[95,99,97,88,97,66,44]
-#baseline-how it look/design.
-NOP3=[34,54,64,90,88,94,88]
-plt.stackplot(Days,NOP1,NOP2,NOP3,baseline="sym",labels=["WEEK 1","WEEK 2","WEEK 3"])
-plt.legend()
-plt.show()
+# NOP1=[56,95,44,49,38,34,55]
+# NOP2=[95,99,97,88,97,66,44]
+# #baseline-how it look/design.
+# NOP3=[34,54,64,90,88,94,88]
+# plt.stackplot(Days,NOP1,NOP2,NOP3,baseline="sym",labels=["WEEK 1","WEEK 2","WEEK 3"])
+# plt.legend()
+# plt.show()
 
 
 
