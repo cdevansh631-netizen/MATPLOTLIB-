@@ -149,7 +149,7 @@ import matplotlib.pyplot as plt
 
 # X=[1,10,99,22,35,90,42,97,98,99,84,88,96,83]
 # plt.violinplot(X,widths=10,showmedians=False,showmeans=False,showextrema=True)
-# plt.show()
+# plt.show()  
 
 
 # da=pd.read_csv(r"C:\Users\cdeva\Downloads\sample_expenses.csv")
@@ -167,7 +167,7 @@ import matplotlib.pyplot as plt
 # plt.stem(X,linefmt="--",markerfmt="s",)
 # plt.plot(X,color="magenta")
 # plt.show()
-#Same For DataFrame :--
+# # Same For DataFrame :--
 
 
 # 9 -> STACK PLOT MATPLOTLIB :--
@@ -175,15 +175,15 @@ import matplotlib.pyplot as plt
 # Contribution of departments over time → Stack plot
 # Category-wise spending over days → Stack plot
 
-# Days=[1,2,3,4,5,6,7]
+Days=[1,2,3,4,5,6,7]
 
-# NOP1=[56,95,44,49,38,34,55]
-# NOP2=[95,99,97,88,97,66,44]
-# #baseline-how it look/design.
-# NOP3=[34,54,64,90,88,94,88]
-# plt.stackplot(Days,NOP1,NOP2,NOP3,baseline="sym",labels=["WEEK 1","WEEK 2","WEEK 3"])
-# plt.legend()
-# plt.show()
+NOP1=[56,95,44,49,38,34,55]
+NOP2=[95,99,97,88,97,66,44]
+#baseline-how it look/design.
+NOP3=[34,54,64,90,88,94,88]
+plt.stackplot(Days,NOP1,NOP2,NOP3,baseline="sym",labels=["WEEK 1","WEEK 2","WEEK 3"])
+plt.legend()
+plt.show()
 
 
 
