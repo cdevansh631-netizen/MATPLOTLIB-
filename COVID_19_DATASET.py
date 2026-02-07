@@ -77,6 +77,12 @@ df["Deaths / 100 Recovered"].replace(np.inf,0,inplace=True)
 
 
 #Active vs Recovered :-
-plt.scatter(df["Active"],df["Recovered"],cmap="pink")
-plt.colorbar()
-plt.show()
+# plt.scatter(df["Active"],df["Recovered"],cmap="pink")
+# plt.colorbar()
+# plt.show()
+
+#Death rate of active region :-
+# dm=df.groupby("WHO Region").agg({"Deaths / 100 Recovered":"mean"}).round(2)
+# plt.boxplot(dm.values,showmeans=True,meanline=True)
+# plt.show()
+

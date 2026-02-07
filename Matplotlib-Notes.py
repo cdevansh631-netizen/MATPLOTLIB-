@@ -128,9 +128,9 @@ import matplotlib.pyplot as plt
 # Salary frequency → Histogram
 # Marks frequency → Histogram
 
-x=[12,14,17,56,34,67,89,98,94,91]
-plt.hist(x,bins=5,edgecolor="black",color="pink")
-plt.show()
+# x=[12,14,17,56,34,67,89,98,94,91]
+# plt.hist(x,bins=5,edgecolor="black",color="pink")
+# plt.show()
 
 
 # da=pd.read_csv(r"C:\Users\cdeva\Downloads\sample_expenses.csv")
